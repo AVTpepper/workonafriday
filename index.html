@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join me on my journey of learning and sharing how to build successful online income streams through experiments and real experiences.">
     <title>Work On A Friday - Learning to Make Money Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav id="navbar">
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container">
-            <div class="nav-container">
-                <div class="logo">Work On A Friday</div>
-                <ul class="nav-links">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#experiments">Experiments</a></li>
-                    <li><a href="#timeline">Timeline</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#social">Follow</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <div class="nav-content">
+                <a href="#hero" class="logo">Work On A Friday</a>
+                
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="#experiments">Experiments</a></li>
+                        <li><a href="#timeline">Timeline</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#social">Follow</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    </button>
+                    
+                    <button class="mobile-toggle" id="mobile-toggle">
+                    </button>
+                </div>
+                
+                <div class="mobile-menu" id="mobile-menu">
+                    <ul>
+                        <li><a href="#experiments">Experiments</a></li>
+                        <li><a href="#timeline">Timeline</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#social">Follow</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -29,7 +50,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Learning to Make Money <span class="gradient-text">Online</span></h1>
+                    <h1>Learning to Make Money <span class="gradient-text-flipped">Online</span></h1>
                     <p>Join me on my adventure as I experiment, learn, and share everything about building income streams online. From social media growth to e-commerce ventures, I am documenting it all.</p>
                     <a href="#social" class="cta-button">Follow My Adventure</a>
                 </div>
@@ -42,6 +63,7 @@
             </div>
         </div>
     </section>
+
     <!-- Current Experiments -->
     <section id="experiments">
         <div class="container">
@@ -49,56 +71,56 @@
                 <h2>Current <span class="gradient-text">Experiments</span></h2>
                 <p>Here's what I'm actively working on right now. Each experiment teaches me something new about making money online.</p>
             </div>
-            <div class="experiments-grid">
-                <div class="experiment-card">
+            <div class="cards-grid">
+                <div class="card">
                     <h3>📱 Social Media Growth</h3>
                     <p>Building authentic audiences on YouTube and Instagram by sharing my learning journey. Testing different content formats and engagement strategies.</p>
-                    <span class="experiment-status status-active">Active</span>
+                    <span class="status-badge">Active</span>
                 </div>
-                <div class="experiment-card">
+                <div class="card">
                     <h3>🛍️ Redbubble Store</h3>
                     <p>Launched my print-on-demand store to test passive income streams. Learning about design, marketing, and customer acquisition.</p>
-                    <span class="experiment-status status-active">Active</span>
+                    <span class="status-badge">Active</span>
                 </div>
-                <div class="experiment-card">
+                <div class="card">
                     <h3>🌐 Personal Website</h3>
                     <p>Building this very website to establish my personal brand and create a central hub for my content and experiments.</p>
-                    <span class="experiment-status status-active">Active</span>
+                    <span class="status-badge">Active</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Timeline -->
-    <section id="timeline" style="background: #f8f9fa;">
+    <section id="timeline">
         <div class="container">
             <div class="section-header">
                 <h2>My <span class="gradient-text">Journey</span></h2>
                 <p>Key milestones and moments in my online money-making adventure.</p>
             </div>
             <div class="timeline">
-                <div class="timeline-item left">
+                <div class="timeline-item">
                     <div class="timeline-content">
                         <div class="timeline-date">March 2024</div>
                         <h3>Started the Journey</h3>
                         <p>Decided to document my learning process and help others by sharing what works (and what doesn't).</p>
                     </div>
                 </div>
-                <div class="timeline-item right">
+                <div class="timeline-item">
                     <div class="timeline-content">
                         <div class="timeline-date">April 2024</div>
                         <h3>Launched Social Media</h3>
                         <p>Created YouTube and Instagram accounts to share my experiments and connect with like-minded people.</p>
                     </div>
                 </div>
-                <div class="timeline-item left">
+                <div class="timeline-item">
                     <div class="timeline-content">
                         <div class="timeline-date">June 2024</div>
                         <h3>First Redbubble Sale</h3>
                         <p>Made my first sale on Redbubble - a small win but a huge motivation boost!</p>
                     </div>
                 </div>
-                <div class="timeline-item right">
+                <div class="timeline-item">
                     <div class="timeline-content">
                         <div class="timeline-date">September 2024</div>
                         <h3>Building Personal Website</h3>
@@ -128,7 +150,7 @@
                     <h3>🎯 My Mission</h3>
                     <p>To create authentic, valuable content that helps others learn alongside me. No get-rich-quick schemes, no false promises - just real experiments, honest results, and genuine insights into building income online.</p>
                     
-                    <h3 style="margin-top: 25px;">💝 My Promise</h3>
+                    <h3>💝 My Promise</h3>
                     <p>I'll always share the full story - the struggles, failures, and lessons learned. Because that's where the real value lies.</p>
                 </div>
             </div>
@@ -136,7 +158,7 @@
     </section>
 
     <!-- Social Media & Featured Content -->
-    <section id="social" style="background: #f8f9fa;">
+    <section id="social">
         <div class="container">
             <div class="section-header">
                 <h2>Follow My <span class="gradient-text">Journey</span></h2>
@@ -148,48 +170,36 @@
                     <div class="social-icon youtube">📺</div>
                     <h3>YouTube</h3>
                     <p>In-depth videos about my experiments, tutorials, and behind-the-scenes content.</p>
-                    <a href="#" class="cta-button" style="margin-top: 20px; padding: 10px 25px; font-size: 0.9rem;">Subscribe</a>
+                    <a href="#" class="cta-button small-cta">Subscribe</a>
                 </div>
                 <div class="social-card">
                     <div class="social-icon instagram">📷</div>
                     <h3>Instagram</h3>
                     <p>Quick updates, daily insights, and visual storytelling of my journey.</p>
-                    <a href="#" class="cta-button" style="margin-top: 20px; padding: 10px 25px; font-size: 0.9rem;">Follow</a>
+                    <a href="#" class="cta-button small-cta">Follow</a>
                 </div>
             </div>
 
-            <div class="section-header" style="margin-top: 60px; margin-bottom: 40px;">
+            <div class="section-header">
                 <h3>Featured Content</h3>
                 <p>My most viewed and helpful content pieces.</p>
             </div>
 
-            <div class="featured-content">
-                <div class="content-card">
-                    <div class="content-thumbnail">
-                        📈 Most Viewed
-                    </div>
-                    <div class="content-info">
-                        <h4>My First Month on Redbubble - Real Results</h4>
-                        <p>Honest breakdown of my first 30 days, including sales, mistakes, and lessons learned.</p>
-                    </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="content-thumbnail">📈 Most Viewed</div>
+                    <h4>My First Month on Redbubble - Real Results</h4>
+                    <p>Honest breakdown of my first 30 days, including sales, mistakes, and lessons learned.</p>
                 </div>
-                <div class="content-card">
-                    <div class="content-thumbnail">
-                        🎯 Popular Tutorial
-                    </div>
-                    <div class="content-info">
-                        <h4>How I Grew My Instagram in 60 Days</h4>
-                        <p>Step-by-step strategy I used to build authentic engagement and grow my following.</p>
-                    </div>
+                <div class="card">
+                    <div class="content-thumbnail">🎯 Popular Tutorial</div>
+                    <h4>How I Grew My Instagram in 60 Days</h4>
+                    <p>Step-by-step strategy I used to build authentic engagement and grow my following.</p>
                 </div>
-                <div class="content-card">
-                    <div class="content-thumbnail">
-                        💡 Fan Favorite
-                    </div>
-                    <div class="content-info">
-                        <h4>5 Online Money Myths I Believed (And Why They're Wrong)</h4>
-                        <p>Debunking common misconceptions about making money online based on my real experience.</p>
-                    </div>
+                <div class="card">
+                    <div class="content-thumbnail">💡 Fan Favorite</div>
+                    <h4>5 Online Money Myths I Believed (And Why They're Wrong)</h4>
+                    <p>Debunking common misconceptions about making money online based on my real experience.</p>
                 </div>
             </div>
         </div>
@@ -199,11 +209,11 @@
     <section id="contact">
         <div class="container">
             <div class="section-header">
-                <h2>Lets <span class="gradient-text">Connect</span></h2>
+                <h2>Let's <span class="gradient-text">Connect</span></h2>
                 <p>Have questions, business ideas, or just want to chat? I would love to hear from you!</p>
             </div>
             
-            <form class="contact-form">
+            <form class="contact-form" id="contact-form">
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" name="name" required>
@@ -231,6 +241,97 @@
             <p>&copy; 2025 Work On A Friday. Built with passion and shared with purpose.</p>
         </div>
     </footer>
-<script src="static/js/script.js"></script>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        
+        // Check for saved theme preference or default to light mode
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        
+        themeToggle.addEventListener('click', function() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+        });
+
+        // Mobile menu functionality
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
+            mobileToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                mobileToggle.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = document.documentElement.getAttribute('data-theme') === 'dark' 
+                    ? 'rgba(26, 26, 26, 0.98)' 
+                    : 'rgba(255, 255, 255, 0.98)';
+            } else {
+                navbar.style.background = document.documentElement.getAttribute('data-theme') === 'dark' 
+                    ? 'rgba(26, 26, 26, 0.95)' 
+                    : 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+
+        // Contact form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! This is a demo form - in a real implementation, this would send your message.');
+        });
+
+        // Card animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Set initial state and observe cards
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.card, .timeline-item, .social-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
 </html>
