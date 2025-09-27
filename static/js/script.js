@@ -57,10 +57,49 @@ window.addEventListener('scroll', function () {
     }
 });
 
-// Contact form submission
-document.getElementById('contact-form').addEventListener('submit', function (e) {
+// Contact form submission with better UX
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    const form = e.target;
+    const button = form.querySelector('.cta-button');
+    const buttonText = button.querySelector('.button-text');
+    const buttonLoading = button.querySelector('.button-loading');
+    const status = document.getElementById('form-status');
+    
+    // Show loading state
+    buttonText.style.display = 'none';
+    buttonLoading.style.display = 'inline';
+    button.disabled = true;
+    
+    // Use fetch to submit the form
+    fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            status.classList.remove('error');
+            status.classList.add('success');
+            status.style.display = 'block';
+            status.innerHTML = '✅ Thanks! Your message has been sent successfully. I\'ll get back to you soon!';
+            form.reset();
+        } else {
+            throw new Error('Form submission failed');
+        }
+    }).catch(error => {
+        status.classList.remove('success');
+        status.classList.add('error');
+        status.style.display = 'block';
+        status.innerHTML = '❌ Oops! Something went wrong. Please try again or email me directly.';
+    }).finally(() => {
+        // Reset button state
+        buttonText.style.display = 'inline';
+        buttonLoading.style.display = 'none';
+        button.disabled = false;
+    });
+    
     e.preventDefault();
-    alert('Thank you for your message! This is a demo form - in a real implementation, this would send your message.');
 });
 
 // Card animation on scroll
