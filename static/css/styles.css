@@ -572,6 +572,52 @@ section:nth-child(even) {
     border-radius: 10px;
 }
 
+/* CSS for a standard YouTube video (16:9) */
+.video-container-16-9 {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.card-content {
+    max-width: 300px;
+    /* Adjust this value to your liking */
+    margin: 0 auto;
+}
+
+/* CSS for a standard YouTube video (16:9) */
+.video-container-16-9 {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+/* CSS for a YouTube Short (9:16) */
+.video-container-9-16-small {
+    position: relative;
+    width: 100%;
+    /* This makes the iframe fill the new, smaller container */
+    padding-bottom: 177.77%;
+    /* 9:16 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+/* Common CSS for the iframe itself */
+.video-container-9-16-small iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* Contact form */
 .contact-form {
     max-width: 600px;
