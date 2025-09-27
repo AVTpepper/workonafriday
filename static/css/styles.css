@@ -292,12 +292,10 @@ body {
 }
 
 @keyframes float {
-
     0%,
     100% {
         transform: translateY(0px);
     }
-
     50% {
         transform: translateY(-20px);
     }
@@ -572,49 +570,31 @@ section:nth-child(even) {
     border-radius: 10px;
 }
 
-/* CSS for a standard YouTube video (16:9) */
-.video-container-16-9 {
+/* Video Containers */
+.video-container-fixed {
     position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    /* 16:9 aspect ratio */
-    height: 0;
+    height: 200px;
+    /* Adjust this value for your desired video height */
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.card-content {
-    max-width: 300px;
-    /* Adjust this value to your liking */
-    margin: 0 auto;
+/* Style for the YouTube Short container, which adds the black background */
+.video-short {
+    background-color: black;
 }
 
-/* CSS for a standard YouTube video (16:9) */
-.video-container-16-9 {
-    position: relative;
+/* Styles for the standard YouTube video iframe */
+.video-wide iframe {
     width: 100%;
-    padding-bottom: 56.25%;
-    /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
+    height: 100%;
 }
 
-/* CSS for a YouTube Short (9:16) */
-.video-container-9-16-small {
-    position: relative;
-    width: 100%;
-    /* This makes the iframe fill the new, smaller container */
-    padding-bottom: 177.77%;
-    /* 9:16 aspect ratio */
-    height: 0;
-    overflow: hidden;
-}
-
-/* Common CSS for the iframe itself */
-.video-container-9-16-small iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+/* Styles for the YouTube Short iframe */
+.video-short iframe {
+    width: auto;
     height: 100%;
 }
 
@@ -699,16 +679,13 @@ footer {
     .logo-break {
         display: block;
     }
-
     .logo {
         font-size: 1.3rem;
         text-align: center;
     }
-
     .nav-content {
         padding: 1rem 0;
     }
-
     .hero {
         padding-top: 140px;
     }
@@ -718,42 +695,33 @@ footer {
     .nav-links {
         display: none;
     }
-
     .mobile-toggle {
         display: block;
     }
-
     .logo {
         font-size: 1.2rem;
     }
-
     .nav-content {
         padding: 0.8rem 0;
     }
-
     .hero {
         padding-top: 120px;
     }
-
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
     }
-
     .hero-text h1 {
         font-size: 2.5rem;
     }
-
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-
     .timeline::before {
         left: 20px;
     }
-
     .timeline-item:nth-child(odd) .timeline-content,
     .timeline-item:nth-child(even) .timeline-content {
         margin-left: 40px;
@@ -761,7 +729,6 @@ footer {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
     .timeline-item::after {
         left: 20px;
         transform: translateX(-50%);
