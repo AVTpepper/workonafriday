@@ -576,10 +576,18 @@ section:nth-child(even) {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
     font-weight: 600;
     margin-bottom: 1rem;
     border-radius: 10px;
+}
+
+.content-thumbnail span {
+    background: rgba(0, 0, 0, 0.3);
+    /* Adds a semi-transparent black background */
+    color: white;
+    /* Keeps the text white */
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
 }
 
 /* Video Containers */
