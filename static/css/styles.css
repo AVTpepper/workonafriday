@@ -45,7 +45,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--navbar-bg, rgba(255, 255, 255, 0.95)); 
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: all 0.3s ease;
@@ -445,7 +445,7 @@ section:nth-child(even) {
 
 /* Timeline */
 .timeline {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     position: relative;
 }
@@ -455,26 +455,26 @@ section:nth-child(even) {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 4px;
+    width: 6px;
     height: 100%;
     background: linear-gradient(180deg, var(--accent-primary), var(--accent-secondary));
 }
 
 .timeline-item {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     position: relative;
 }
 
 .timeline-item:nth-child(odd) .timeline-content {
     margin-left: 0;
-    margin-right: 50%;
-    padding-right: 2rem;
+    margin-right: 50.5%;
+    padding-right: 1rem;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
-    margin-left: 50%;
+    margin-left: 50.5%;
     margin-right: 0;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 .timeline-content {
@@ -728,8 +728,8 @@ section:nth-child(even) {
 
 /* Footer */
 footer {
-    background: var(--text-primary);
-    color: var(--bg-primary);
+    background: #1a1a1a;
+    color: #f8f9fa; 
     text-align: center;
     padding: 2rem 0;
 }
@@ -798,8 +798,8 @@ footer {
     .timeline-item:nth-child(even) .timeline-content {
         margin-left: 40px;
         margin-right: 0;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .timeline-item::after {
