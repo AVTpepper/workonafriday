@@ -339,6 +339,9 @@ section:nth-child(even) {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background: var(--card-bg);
     padding: 2rem;
     border-radius: 20px;
@@ -349,10 +352,7 @@ section:nth-child(even) {
     overflow: hidden;
 }
 
-/*
- * This new CSS block applies the hover effect to the specific cards
- * within the 'social' section.
- */
+
 #social .card::before {
     content: '';
     position: absolute;
@@ -381,8 +381,16 @@ section:nth-child(even) {
 }
 
 .card p {
+    margin-bottom: 1rem;
     color: var(--text-secondary);
     line-height: 1.6;
+}
+
+/* Card Badges Container */
+.card-badges {
+    display: flex;
+    align-items: center; 
+    margin-top: auto;
 }
 
 .status-badge {
@@ -393,14 +401,46 @@ section:nth-child(even) {
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 600;
-    margin-top: 1rem;
     border: 1px solid rgba(163, 216, 244, 0.5);
+    transition: opacity 0.3s ease;
 }
 
 [data-theme="dark"] .status-badge {
     background: rgba(163, 216, 244, 0.2);
     color: #87ceeb;
     border: 1px solid rgba(163, 216, 244, 0.4);
+}
+
+/* Linked Badge Styles */
+.link-badge {
+    display: inline-block;
+    background: rgba(81, 145, 255, 0.3);
+    color: #4b88ff;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid rgba(81, 145, 255, 0.5);
+    transition: background 0.3s ease;
+    cursor: pointer;
+    margin-left: 0.5rem; 
+}
+
+/* New, more specific CSS */
+.card a {
+    text-decoration: none;
+}
+
+/* Hover effect for the new badge */
+.link-badge:hover {
+    background: rgba(81, 145, 255, 0.5);
+}
+
+/* Dark mode styles for the new badge */
+[data-theme="dark"] .link-badge {
+    background: rgba(81, 145, 255, 0.2);
+    color: #a3c9ff;
+    border: 1px solid rgba(81, 145, 255, 0.4);
 }
 
 /* Timeline */
